@@ -30,4 +30,4 @@ ADD --chown=$USER_UID:$USER_GID --chmod=700 https://binaries.hyperliquid.xyz/Tes
 EXPOSE 9000
 EXPOSE 8000
 
-ENTRYPOINT $HOME/hl-visor
+ENTRYPOINT ["/home/hluser/hl-visor", "run-non-validator"]
